@@ -1,15 +1,11 @@
 import "swiper/swiper-bundle.css";
-
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
-import { useEffect, useRef } from "react";
-
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import { Pagination, Navigation } from "swiper/modules";
 
+import { useCallback, useEffect, useRef } from "react";
 import Navbar from "../navbar/Navbar";
 import { Link } from "react-router-dom";
 
@@ -50,7 +46,7 @@ const Home = () => {
   const carouselRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
-  const [items, setItems] = useState([
+  const items = [
     {
       id: 1,
       src: frame56,
@@ -86,11 +82,29 @@ const Home = () => {
       description:
         "At our cafe, we take pride in providing our customers with the best coffee around. Our carefull take pride in providing our customers with the best coffee around. Our carefull",
     },
-  ]);
+  ];
 
   const timeAutoNext = 2000;
   const timeRunning = 1000;
   const autoSlideTimeout = useRef();
+
+  const showSlider = useCallback(
+    (direction) => {
+      if (isAnimating) return;
+
+      setIsAnimating(true);
+      if (direction === "next") {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
+      } else {
+        setCurrentIndex(
+          (prevIndex) => (prevIndex - 1 + items.length) % items.length
+        );
+      }
+
+      setTimeout(() => setIsAnimating(false), timeRunning);
+    },
+    [isAnimating, items.length]
+  );
 
   useEffect(() => {
     autoSlideTimeout.current = setTimeout(() => {
@@ -98,7 +112,7 @@ const Home = () => {
     }, timeAutoNext);
 
     return () => clearTimeout(autoSlideTimeout.current);
-  }, [currentIndex]);
+  }, [currentIndex, showSlider]);
 
   useEffect(() => {
     const carousel = carouselRef.current;
@@ -108,30 +122,15 @@ const Home = () => {
 
       itemsArray.forEach((item, index) => {
         // item.style.left = `${50 + (index - currentIndex) * 13}%`;
-        const leftPosition = 45 + (index - currentIndex) * -20;
-        if (leftPosition >= 45) {
+        const leftPosition = 35 + (index - 1 - currentIndex) * -20;
+        if (leftPosition >= 35) {
           item.style.left = `${leftPosition}%`;
         } else {
-          item.style.left = "45%";
+          item.style.left = "35%";
         }
       });
     }
-  }, [currentIndex, items]);
-
-  const showSlider = (direction) => {
-    if (isAnimating) return;
-
-    setIsAnimating(true);
-    if (direction === "next") {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
-    } else {
-      setCurrentIndex(
-        (prevIndex) => (prevIndex - 1 + items.length) % items.length
-      );
-    }
-
-    setTimeout(() => setIsAnimating(false), timeRunning);
-  };
+  }, [currentIndex]);
 
   const [active, setActive1] = useState("0");
   const handleSlideChange = (swiper) => {
