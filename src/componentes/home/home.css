@@ -1811,13 +1811,14 @@ footer{
     position: absolute;
     bottom: 50px;
     transition: 1s ease-in-out;
-    margin-left: -50%;
-    margin-bottom: -200px;
+    margin-left: -55%;
+    margin-bottom: -280px;
     width: max-content;
     z-index: 100;
     display: flex;
     gap: 7px;
     transform: translateX(0%);
+    
     
   }
   
@@ -1855,8 +1856,9 @@ footer{
    
     left: calc(-1%);
   }
-  .thumbnail .item:nth-child(n+5){
+  .thumbnail .item:nth-child(5){
     opacity: 0;
+    display: none;
     left: calc(-1%);
   }
  

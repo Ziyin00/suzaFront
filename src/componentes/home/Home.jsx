@@ -75,13 +75,13 @@ const Home = () => {
       description:
         "At our cafe, we take pride in providing our customers with the best coffee around. Our carefull take pride in providing our customers with the best coffee around. Our carefull",
     },
-    {
-      id: 5,
-      src: frame60,
-      title: "preparing for packaging",
-      description:
-        "At our cafe, we take pride in providing our customers with the best coffee around. Our carefull take pride in providing our customers with the best coffee around. Our carefull",
-    },
+    // {
+    //   id: 5,
+    //   src: frame60,
+    //   title: "preparing for packaging",
+    //   description:
+    //     "At our cafe, we take pride in providing our customers with the best coffee around. Our carefull take pride in providing our customers with the best coffee around. Our carefull",
+    // },
   ];
 
   const timeAutoNext = 2000;
@@ -122,11 +122,11 @@ const Home = () => {
 
       itemsArray.forEach((item, index) => {
         // item.style.left = `${50 + (index - currentIndex) * 13}%`;
-        const leftPosition = 35 + (index - 1 - currentIndex) * -20;
-        if (leftPosition >= 35) {
+        const leftPosition = 30 + (index - 1 - currentIndex) * -25;
+        if (leftPosition >= 30) {
           item.style.left = `${leftPosition}%`;
         } else {
-          item.style.left = "35%";
+          item.style.left = "30%";
         }
       });
     }
