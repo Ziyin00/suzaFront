@@ -51,7 +51,7 @@ nav ul li .links{
   font-family:Montserrat;
 
 }
-nav ul li .links:hover{
+nav ul li .links:hover , nav ul li .active{
   border-bottom: 3px solid #ffffff;
 }
 .firstH{
@@ -330,6 +330,7 @@ nav ul li .links:hover{
   width: 100vw;
   overflow: hidden;
   position: relative;
+  
 }
 
 .carousel .list {
@@ -339,7 +340,7 @@ nav ul li .links:hover{
   background-size: cover;
   height: 100vh;
   width: 100vw;
-  opacity: 1;
+  
 }
 
 .carousel .list .item {
@@ -360,12 +361,13 @@ nav ul li .links:hover{
   z-index: 1;
 }
 
-.carousel .list .item img {
+/* .carousel .list .item img {
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+  
+} */
 
 .carousel .list .item .content {
   position: absolute;
@@ -472,7 +474,7 @@ nav ul li .links:hover{
   flex-shrink: 0;
   position: relative;
   transition: 1s;
- 
+  
 }
 
 .thumbnail .item:nth-child(1){
@@ -513,6 +515,7 @@ nav ul li .links:hover{
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
+  
 }
 
 .thumbnail .item .content {
@@ -1812,7 +1815,7 @@ footer{
     bottom: 50px;
     transition: 1s ease-in-out;
     margin-left: -55%;
-    margin-bottom: -280px;
+    margin-bottom: -200px;
     width: max-content;
     z-index: 100;
     display: flex;
@@ -3025,6 +3028,7 @@ background: linear-gradient(250.73deg, #E0A872 13.76%, #F8E4BE 49.91%, #FFF3E0 5
     width: 100vw;
     overflow: visible;
     position: relative;
+    
   }
   
   .carousel .list {
@@ -3147,7 +3151,7 @@ background: linear-gradient(250.73deg, #E0A872 13.76%, #F8E4BE 49.91%, #FFF3E0 5
     position: absolute;
     bottom: 50px;
     transition: 1s ease-in-out;
-    margin-left: -45%;
+    margin-left: -5%;
     /* margin-top: 400px; */
     margin-bottom: -500px;
     width: max-content;

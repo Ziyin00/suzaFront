@@ -1,8 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "../../assets/img/SUZA PNG MO 1 (1).png";
 import "./navbar.css";
 import { useState } from "react";
 const Navbar = () => {
+  // const [isActive, setIsActive] = useState(true);
   const [active, setActive] = useState("nav_menu");
   const [toggleIcon, setToggleIcon] = useState("burger-menu");
   const navToggle = () => {
@@ -12,6 +13,19 @@ const Navbar = () => {
     setToggleIcon((prev) =>
       prev === "burger-menu" ? "burger-menu toggle" : "burger-menu"
     );
+  };
+  const { pathname } = useLocation();
+  const subpage = pathname.split("/")?.[1];
+  // console.log(subpage);
+
+  const Linkness = (type = null) => {
+    let classes = " links";
+    if (type === subpage) {
+      classes += " active";
+    } else {
+      classes += " ";
+    }
+    return classes;
   };
 
   return (
@@ -25,22 +39,22 @@ const Navbar = () => {
           <nav>
             <ul className={active}>
               <li className="nav_item">
-                <Link to="/" className="links">
+                <Link to="/" className={Linkness("")}>
                   Home
                 </Link>
-                <Link to="/AboutUs" className="links">
+                <Link to="/AboutUs" className={Linkness("AboutUs")}>
                   About Us
                 </Link>
-                <Link to="/Varieties" className="links">
+                <Link to="/Varieties" className={Linkness("Varieties")}>
                   Varieties
                 </Link>
-                <Link to="/Gallery" className="links">
+                <Link to="/Gallery" className={Linkness("Gallery")}>
                   Gallery
                 </Link>
-                <Link to="/Reviews" className="links">
+                <Link to="/Reviews" className={Linkness("Reviews")}>
                   Reviews
                 </Link>
-                <Link to="/Contact" className="links">
+                <Link to="/Contact" className={Linkness("Contact")}>
                   Contact Us
                 </Link>
               </li>

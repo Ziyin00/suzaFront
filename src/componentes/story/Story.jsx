@@ -1,8 +1,10 @@
 import "./story.css";
 import StoryImage from "../../assets/img/Maskgroup2.png";
+import Navbar from "../navbar/Navbar";
 const Story = () => {
   return (
     <>
+      <Navbar />
       <div className="story">
         <h1>Our Story</h1>
         <div className="float">

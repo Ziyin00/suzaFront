@@ -122,11 +122,11 @@ const Home = () => {
 
       itemsArray.forEach((item, index) => {
         // item.style.left = `${50 + (index - currentIndex) * 13}%`;
-        const leftPosition = 30 + (index - 1 - currentIndex) * -25;
-        if (leftPosition >= 30) {
+        const leftPosition = 35 + (index - 1 - currentIndex) * -25;
+        if (leftPosition >= 35) {
           item.style.left = `${leftPosition}%`;
         } else {
-          item.style.left = "30%";
+          item.style.left = "35%";
         }
       });
     }
@@ -134,7 +134,7 @@ const Home = () => {
 
   const [active, setActive1] = useState("0");
   const handleSlideChange = (swiper) => {
-    setActive1(swiper.activeIndex);
+    setActive1(swiper.activeIndex + 1);
   };
 
   return (
@@ -318,7 +318,7 @@ const Home = () => {
       <div className="gallery">
         <h1>Gallery</h1>
         <div className="container">
-          <div className={`carousel ${isAnimating ? "animating" : ""}`}>
+          <div className={`carousel ${isAnimating ? "active" : ""}`}>
             <div className="list">
               {items.map((item, index) => (
                 <div
@@ -326,7 +326,7 @@ const Home = () => {
                   className={`item ${index === currentIndex ? "active" : ""}`}
                   style={{
                     backgroundImage: `url(${item.src})`,
-                    zIndex: index === currentIndex ? 1 : 0,
+                    // zIndex: index === currentIndex ? 1 : 0,
                   }}
                 >
                   <div className="content">
@@ -400,9 +400,6 @@ const Home = () => {
           className="mySwipe swipeer"
         >
           <div className="allcustom">
-            <SwiperSlide className="newCustomer" style={{ marginTop: "30%" }}>
-              New Customer
-            </SwiperSlide>
             <SwiperSlide
               className={active === 0 ? "swipeer1Active" : "swipeer1"}
             >
