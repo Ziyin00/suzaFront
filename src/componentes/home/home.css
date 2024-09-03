@@ -2709,7 +2709,9 @@ background: linear-gradient(250.73deg, #E0A872 13.76%, #F8E4BE 49.91%, #FFF3E0 5
   text-align: center;
   color: #FFF3E0;
 }
-
+.footer5{
+  display: none;
+}
 
 
 }
@@ -4051,6 +4053,9 @@ background: linear-gradient(250.73deg, #E0A872 13.76%, #F8E4BE 49.91%, #FFF3E0 5
   text-align: center;
   color: #FFF3E0;
 }
+.footer5{
+  display: none;
+}
 
 
 
@@ -4077,4 +4082,5 @@ background: linear-gradient(250.73deg, #E0A872 13.76%, #F8E4BE 49.91%, #FFF3E0 5
   .story3{
     margin-left: 10px;
   }
+
 }
