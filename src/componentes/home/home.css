@@ -1311,6 +1311,21 @@ footer{
 .adress p{
   padding: 0px 5px;
 }
+.footer5 {
+  margin-left: 500px;
+}
+.footer3 .footer5 ul li{
+  margin-top: -270px;
+  display: flex;
+  flex-direction: column;
+   padding: 10px;
+
+}
+.footer5 ul li .link{
+  padding: 9px 10px;
+  color: #FFF3E0;
+  text-decoration: none;
+}
 .footer2 ul li{
   margin-top: 70px;
   display: flex;

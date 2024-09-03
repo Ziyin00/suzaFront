@@ -75,13 +75,6 @@ const Home = () => {
       description:
         "At our cafe, we take pride in providing our customers with the best coffee around. Our carefull take pride in providing our customers with the best coffee around. Our carefull",
     },
-    // {
-    //   id: 5,
-    //   src: frame60,
-    //   title: "preparing for packaging",
-    //   description:
-    //     "At our cafe, we take pride in providing our customers with the best coffee around. Our carefull take pride in providing our customers with the best coffee around. Our carefull",
-    // },
   ];
 
   const timeAutoNext = 2000;
@@ -132,9 +125,9 @@ const Home = () => {
     }
   }, [currentIndex]);
 
-  const [active, setActive1] = useState("0");
+  const [active, setActive] = useState(1);
   const handleSlideChange = (swiper) => {
-    setActive1(swiper.activeIndex + 1);
+    setActive(swiper.activeIndex + 1);
   };
 
   return (
@@ -424,7 +417,7 @@ const Home = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide
-              className={active === 1 ? "swipeer2Active" : "swipeer2"}
+              className={` ${active === 1 ? "swipeer2Active" : "swipeer2"}`}
             >
               <div className="customer2">
                 <div className="vectors">
@@ -550,6 +543,7 @@ const Home = () => {
                 <FaSquareInstagram className="social" />
               </div>
             </div>
+
             <div className="footer2">
               <ul>
                 <li>
@@ -565,6 +559,20 @@ const Home = () => {
           </div>
 
           <div className="footer3">
+            <div className="footer5">
+              <ul>
+                <li>
+                  <h3>Important Links</h3>
+
+                  <Link className="link">Home</Link>
+                  <Link className="link">About</Link>
+                  <Link className="link">Our Story</Link>
+                  <Link className="link">Menu</Link>
+                  <Link className="link">Locations</Link>
+                  <Link className="link">Support</Link>
+                </li>
+              </ul>
+            </div>
             <p>Developed By Ziyin Ab.</p>
             <p>&copy; Copyright 2024 Suza Coffee All Rights Reserved</p>
           </div>
