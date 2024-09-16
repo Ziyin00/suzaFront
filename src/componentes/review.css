@@ -1457,3 +1457,749 @@
     filter: contrast(0.5);
   }
 }
+
+@media (min-width: 500px) and (max-width: 778px) {
+  .swipeer {
+    margin-top: -10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    font-family: jura;
+    font-size: x-small;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0%;
+    z-index: 1;
+    height: 320px;
+    border-radius: 0px;
+    overflow: hidden;
+  }
+  .newCustomer {
+    margin-left: -150px;
+  }
+
+  .swipeer2 {
+    background-color: #f8e4be33;
+    border-radius: 10px;
+    padding: 0px 40px;
+    width: 28%;
+    height: 360;
+    margin-top: 190px;
+    margin-left: 5px;
+    text-align: center;
+    border-top: 0.42px solid;
+    transition: all 0.5s ease-in-out;
+    border-top-color: linear-gradient(
+      81.91% 191.89% at 2.52% 0%,
+      #a8715c 0%,
+      #54362a 27.56%,
+      rgba(34, 21, 24, 0) 87.59%
+    );
+  }
+
+  .swipeer2 .customer2 .profileImage {
+    width: 90px;
+    height: 90px;
+    margin-top: 20px;
+    border-radius: 50%;
+    border-top: 4px solid;
+
+    border-color: linear-gradient(
+      180deg,
+      #f8e4be24 0%,
+      rgba(248, 228, 190, 0) 61.08%
+    );
+  }
+  .swipeer2 .customer2 .vectors {
+    margin-top: -10px;
+    margin-left: 180px;
+    display: none;
+  }
+  .swipeer2 .customer2 .vectors .vector {
+    width: 5px;
+    height: 5px;
+  }
+
+  .swipeer2 .customer2 h2 {
+    padding: 5px 0px;
+    width: 80px;
+    margin-left: 35%;
+    text-align: center;
+    display: none;
+  }
+  .swipeer2 .customer2 p {
+    font-size: small;
+    display: none;
+  }
+  .swipeer2 .customer2 .icons {
+    font-size: large;
+    padding: 5px 5px;
+    display: none;
+  }
+  .swipeer2 .customer2 .icon {
+    background: linear-gradient(
+      250.73deg,
+      #e0a872 13.76%,
+      #f8e4be 49.91%,
+      #fff3e0 58.47%,
+      #e0a872 95.09%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  .swipeer2 .customer2 .icon {
+    background: linear-gradient(
+      250.73deg,
+      #e0a872 13.76%,
+      #f8e4be 49.91%,
+      #fff3e0 58.47%,
+      #e0a872 95.09%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  .swipeer2Active {
+    background-color: #4d3126;
+    padding: 0px 40px;
+    border-radius: 10px;
+    width: 28%;
+    height: 360;
+    margin-top: 50px;
+    margin-left: 5px;
+    text-align: center;
+    border-top: 0.42px solid;
+    border-top-color: linear-gradient(
+      81.91% 191.89% at 2.52% 0%,
+      #a8715c 0%,
+      #54362a 27.56%,
+      rgba(34, 21, 24, 0) 87.59%
+    );
+    transition: all 1s ease-in-out;
+  }
+
+  .swipeer2Active .customer2 .profileImage {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border-top: 4px solid;
+    border-color: linear-gradient(
+      180deg,
+      #f8e4be24 0%,
+      rgba(248, 228, 190, 0) 61.08%
+    );
+  }
+  .swipeer2Active .customer2 .vectors {
+    margin-top: -10px;
+    margin-left: 110px;
+    display: block;
+  }
+
+  .swipeer2Active .customer2 h2 {
+    padding: 5px 0px;
+    width: 80px;
+    margin-left: 35%;
+    text-align: center;
+    display: block;
+  }
+  .swipeer2Active .customer2 p {
+    font-size: small;
+    display: block;
+  }
+  .swipeer2Active .customer2 .icons {
+    font-size: large;
+    padding: 5px 5px;
+    display: block;
+  }
+  .swipeer2Active .customer2 .icon {
+    background: linear-gradient(
+      250.73deg,
+      #e0a872 13.76%,
+      #f8e4be 49.91%,
+      #fff3e0 58.47%,
+      #e0a872 95.09%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  .swipeer4 {
+    background-color: #f8e4be33;
+    border-radius: 10px;
+    padding: 0px 30px;
+    width: 28%;
+    height: 360;
+    margin-top: 190px;
+    margin-left: 5px;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    border-top: 0.42px solid;
+    border-top-color: linear-gradient(
+      81.91% 191.89% at 2.52% 0%,
+      #a8715c 0%,
+      #54362a 27.56%,
+      rgba(34, 21, 24, 0) 87.59%
+    );
+  }
+
+  .swipeer4 .customer4 .profileImage {
+    width: 90px;
+    height: 90px;
+    margin-top: 20px;
+    border-radius: 50%;
+    border-top: 4px solid;
+
+    border-color: linear-gradient(
+      180deg,
+      #f8e4be24 0%,
+      rgba(248, 228, 190, 0) 61.08%
+    );
+  }
+  .swipeer4 .customer4 .vectors {
+    margin-top: -10px;
+    margin-left: 180px;
+    display: none;
+  }
+  .swiper-button-next .customer4 .vectors {
+    display: block;
+  }
+  .swipeer4 .customer4 .vectors .vector {
+    width: 5px;
+    height: 5px;
+  }
+
+  .swipeer4 .customer4 h2 {
+    padding: 5px 0px;
+    width: 80px;
+    margin-left: 35%;
+    text-align: center;
+    display: none;
+  }
+  .swipeer4 .customer4 p {
+    font-size: small;
+    display: none;
+  }
+  .swipeer4 .customer4 .icons {
+    font-size: large;
+    padding: 5px 5px;
+    display: none;
+  }
+  .swipeer4 .customer4 .icon {
+    background: linear-gradient(
+      250.73deg,
+      #e0a872 13.76%,
+      #f8e4be 49.91%,
+      #fff3e0 58.47%,
+      #e0a872 95.09%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  .swipeer4Active {
+    background-color: #4d3126;
+    padding: 0px 30px;
+    border-radius: 10px;
+    width: 28%;
+    height: 360;
+    margin-top: 50px;
+    margin-left: 5px;
+    text-align: center;
+    border-top: 0.42px solid;
+    border-top-color: linear-gradient(
+      81.91% 191.89% at 2.52% 0%,
+      #a8715c 0%,
+      #54362a 27.56%,
+      rgba(34, 21, 24, 0) 87.59%
+    );
+    transition: all 1s ease-in-out;
+  }
+  .swipeer4Active .customer4 .profileImage {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border-top: 4px solid;
+    border-color: linear-gradient(
+      180deg,
+      #f8e4be24 0%,
+      rgba(248, 228, 190, 0) 61.08%
+    );
+  }
+  .swipeer4Active .customer4 .vectors {
+    margin-top: -10px;
+    margin-left: 110px;
+    display: block;
+  }
+  .swiper-button-next .customer4 .vectors {
+    display: block;
+  }
+  .swipeer4Active .customer4 .vectors .vector {
+    width: 5px;
+    height: 5px;
+  }
+
+  .swipeer4Active .customer4 h2 {
+    padding: 5px 0px;
+    width: 80px;
+    margin-left: 35%;
+    text-align: center;
+    display: block;
+  }
+  .swipeer4Active .customer4 p {
+    font-size: small;
+    display: block;
+  }
+  .swipeer4Active .customer4 .icons {
+    font-size: large;
+    padding: 5px 5px;
+    display: block;
+  }
+  .swipeer4Active .customer4 .icon {
+    background: linear-gradient(
+      250.73deg,
+      #e0a872 13.76%,
+      #f8e4be 49.91%,
+      #fff3e0 58.47%,
+      #e0a872 95.09%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  .swipeer3 {
+    background-color: #f8e4be33;
+    border-radius: 10px;
+    padding: 0px 30px;
+    width: 28%;
+    height: 360;
+    margin-top: 190px;
+    margin-left: 5px;
+    text-align: center;
+    border-top: 0.42px solid;
+    transition: all 0.5s ease-in-out;
+    border-top-color: linear-gradient(
+      81.91% 191.89% at 2.52% 0%,
+      #a8715c 0%,
+      #54362a 27.56%,
+      rgba(34, 21, 24, 0) 87.59%
+    );
+  }
+  .swipeer3 .customer3 .profileImage {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border-top: 4px solid;
+    border-color: linear-gradient(
+      180deg,
+      #f8e4be24 0%,
+      rgba(248, 228, 190, 0) 61.08%
+    );
+    margin-top: 20px;
+  }
+  .swipeer3 .customer3 .vectors {
+    display: none;
+    margin-top: -10px;
+    margin-right: -180px;
+  }
+  .swipeer3 .customer3 h2 {
+    padding: 5px 0px;
+    width: 80px;
+    margin-left: 35%;
+    text-align: center;
+    display: none;
+  }
+  .swipeer3 .customer3 p {
+    display: none;
+  }
+  .swipeer3 .customer3 .icons {
+    font-size: large;
+    padding: 5px 5px;
+    display: none;
+  }
+  .swipeer3 .customer3 .icon {
+    background: linear-gradient(
+      250.73deg,
+      #e0a872 13.76%,
+      #f8e4be 49.91%,
+      #fff3e0 58.47%,
+      #e0a872 95.09%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  .swipeer3Active {
+    background-color: #4d3126;
+    padding: 0px 30px;
+    border-radius: 10px;
+    width: 28%;
+    height: 360;
+    margin-top: 50px;
+    margin-left: 5px;
+    text-align: center;
+    border-top: 0.42px solid;
+    border-top-color: linear-gradient(
+      81.91% 191.89% at 2.52% 0%,
+      #a8715c 0%,
+      #54362a 27.56%,
+      rgba(34, 21, 24, 0) 87.59%
+    );
+    transition: all 1s ease-in-out;
+  }
+  .swipeer3Active .customer3 .profileImage {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border-top: 4px solid;
+    border-color: linear-gradient(
+      180deg,
+      #f8e4be24 0%,
+      rgba(248, 228, 190, 0) 61.08%
+    );
+  }
+  .swipeer3Active .customer3 .vectors {
+    margin-top: -10px;
+    margin-right: -180px;
+    display: block;
+  }
+  .swipeer3Active .customer3 h2 {
+    padding: 5px 0px;
+    width: 80px;
+    margin-left: 35%;
+    text-align: center;
+    display: block;
+  }
+  .swipeer3Active .customer3 p {
+    display: block;
+  }
+  .swipeer3Active .customer3 .icons {
+    font-size: large;
+    padding: 5px 5px;
+    display: block;
+  }
+  .swipeer3Active .customer3 .icon {
+    background: linear-gradient(
+      250.73deg,
+      #e0a872 13.76%,
+      #f8e4be 49.91%,
+      #fff3e0 58.47%,
+      #e0a872 95.09%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  .swipeer1 {
+    /* display: none; */
+    background-color: #f8e4be33;
+    border-radius: 10px;
+    padding: 0px 30px;
+    width: 28%;
+    height: 360;
+    margin-top: 190px;
+    margin-left: -350px;
+    text-align: center;
+    border-top: 0.42px solid;
+    z-index: -1;
+    border-top-color: linear-gradient(
+      81.91% 191.89% at 2.52% 0%,
+      #a8715c 0%,
+      #54362a 27.56%,
+      rgba(34, 21, 24, 0) 87.59%
+    );
+    transition: all 0.5s ease-in-out;
+  }
+
+  .swipeer1 .customer1 .profileImage {
+    width: 90px;
+    height: 90px;
+    margin-top: 20px;
+    border-radius: 50%;
+    border-top: 4px solid;
+
+    border-color: linear-gradient(
+      180deg,
+      #f8e4be24 0%,
+      rgba(248, 228, 190, 0) 61.08%
+    );
+  }
+  .swipeer1 .customer1 .vectors {
+    margin-top: -10px;
+    margin-left: 180px;
+    display: none;
+  }
+  .swipeer1 .customer1 .vectors .vector {
+    width: 5px;
+    height: 5px;
+  }
+
+  .swipeer1 .customer1 h2 {
+    padding: 5px 0px;
+    width: 80px;
+    margin-left: 35%;
+    text-align: center;
+    display: none;
+  }
+  .swipeer1 .customer1 p {
+    font-size: small;
+    display: none;
+  }
+  .swipeer1 .customer1 .icons {
+    font-size: large;
+    padding: 5px 5px;
+    display: none;
+  }
+  .swipeer1 .customer1 .icon {
+    background: linear-gradient(
+      250.73deg,
+      #e0a872 13.76%,
+      #f8e4be 49.91%,
+      #fff3e0 58.47%,
+      #e0a872 95.09%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  .swipeer1Active {
+    background-color: #4d3126;
+    padding: 0px 50px;
+    border-radius: 10px;
+    width: 28%;
+    height: 360;
+    margin-top: 50px;
+    margin-left: 10px;
+    text-align: center;
+    border-top: 0.42px solid;
+    z-index: -1;
+    transition: all 1s ease-in-out;
+    border-top-color: linear-gradient(
+      81.91% 191.89% at 2.52% 0%,
+      #a8715c 0%,
+      #54362a 27.56%,
+      rgba(34, 21, 24, 0) 87.59%
+    );
+  }
+
+  .swipeer1Active .customer1 .profileImage {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border-top: 4px solid;
+    border-color: linear-gradient(
+      180deg,
+      #f8e4be24 0%,
+      rgba(248, 228, 190, 0) 61.08%
+    );
+  }
+  .swipeer1Active .customer1 .vectors {
+    margin-top: -10px;
+    margin-left: 90px;
+    display: block;
+  }
+  .swipeer1Active .customer1 .vectors .vector {
+    font-size: xx-small;
+  }
+
+  .swipeer1Active .customer1 h2 {
+    padding: 5px 0px;
+    width: 80px;
+    margin-left: 35%;
+    text-align: center;
+    display: block;
+  }
+  .swipeer1Active .customer1 p {
+    font-size: small;
+    display: block;
+  }
+  .swipeer1Active .customer1 .icons {
+    font-size: large;
+    padding: 5px 5px;
+    display: block;
+  }
+  .swipeer1Active .customer1 .icon {
+    background: linear-gradient(
+      250.73deg,
+      #e0a872 13.76%,
+      #f8e4be 49.91%,
+      #fff3e0 58.47%,
+      #e0a872 95.09%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  .swipeer5 {
+    background-color: #f8e4be33;
+    border-radius: 10px;
+    padding: 0px 30px;
+    width: 28%;
+    height: 360;
+    margin-top: 190px;
+    margin-left: 5px;
+    margin-right: 0px;
+    text-align: center;
+    border-top: 0.42px solid;
+    z-index: -1;
+    border-top-color: linear-gradient(
+      81.91% 191.89% at 2.52% 0%,
+      #a8715c 0%,
+      #54362a 27.56%,
+      rgba(34, 21, 24, 0) 87.59%
+    );
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+  }
+  .swipeer5 .customer5 .profileImage {
+    width: 90px;
+    height: 90px;
+    margin-top: 20px;
+    border-radius: 50%;
+    border-top: 4px solid;
+    border-color: linear-gradient(
+      180deg,
+      #f8e4be24 0%,
+      rgba(248, 228, 190, 0) 61.08%
+    );
+  }
+  .swipeer5 .customer5 .vectors {
+    margin-top: -10px;
+    margin-left: 180px;
+    display: none;
+  }
+  .swipeer5 .customer5 .vectors .vector {
+    width: 5px;
+    height: 5px;
+  }
+
+  .swipeer5 .customer5 h2 {
+    padding: 5px 0px;
+    width: 80px;
+    margin-left: 35%;
+    text-align: center;
+    display: none;
+  }
+  .swipeer5 .customer5 p {
+    font-size: small;
+    display: none;
+  }
+  .swipeer5 .customer5 .icons {
+    font-size: large;
+    padding: 5px 5px;
+    display: none;
+  }
+  .swipeer5 .customer5 .icon {
+    background: linear-gradient(
+      250.73deg,
+      #e0a872 13.76%,
+      #f8e4be 49.91%,
+      #fff3e0 58.47%,
+      #e0a872 95.09%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  .swipeer5Active {
+    background-color: #4d3126;
+    padding: 0px 30px;
+    border-radius: 10px;
+    width: 28%;
+    height: 360;
+    margin-top: 50px;
+    margin-left: 5px;
+    margin-right: 0px;
+    text-align: center;
+    border-top: 0.42px solid;
+    z-index: -1;
+    border-top-color: linear-gradient(
+      81.91% 191.89% at 2.52% 0%,
+      #a8715c 0%,
+      #54362a 27.56%,
+      rgba(34, 21, 24, 0) 87.59%
+    );
+    transition: all 1s ease-in-out;
+  }
+  .swipeer5Active .customer5 .profileImage {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border-top: 4px solid;
+    border-color: linear-gradient(
+      180deg,
+      #f8e4be24 0%,
+      rgba(248, 228, 190, 0) 61.08%
+    );
+  }
+  .swipeer5Active .customer5 .vectors {
+    margin-top: -10px;
+    margin-left: 110px;
+    display: block;
+  }
+  .swipeer5Active .customer5 .vectors .vector {
+    width: 5px;
+    height: 5px;
+  }
+
+  .swipeer5Active .customer5 h2 {
+    padding: 5px 0px;
+    width: 80px;
+    margin-left: 35%;
+    text-align: center;
+    display: block;
+  }
+  .swipeer5Active .customer5 p {
+    font-size: small;
+    display: block;
+  }
+  .swipeer5Active .customer5 .icons {
+    font-size: large;
+    padding: 5px 5px;
+    display: block;
+  }
+  .swipeer5Active .customer5 .icon {
+    background: linear-gradient(
+      250.73deg,
+      #e0a872 13.76%,
+      #f8e4be 49.91%,
+      #fff3e0 58.47%,
+      #e0a872 95.09%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  .customerReview .left {
+    margin-top: 110px;
+    padding-left: 20px;
+    font-size: x-large;
+    cursor: pointer;
+  }
+  .customerReview .right {
+    margin-top: 110px;
+    padding-right: 20px;
+    font-size: x-large;
+    cursor: pointer;
+  }
+  .customerReview .right:hover {
+    transform: scale(1.2);
+    filter: contrast(0.5);
+  }
+  .customerReview .left:hover {
+    transform: scale(1.2);
+    filter: contrast(0.5);
+  }
+  .swiper-button-prev {
+    color: #dfc39d;
+  }
+  .swiper-button-prev:hover {
+    transform: scale(1.02);
+    filter: contrast(0.5);
+  }
+  .swiper-button-next {
+    color: #dfc39d;
+  }
+  .swiper-button-next:hover {
+    transform: scale(1.02);
+    filter: contrast(0.5);
+  }
+}

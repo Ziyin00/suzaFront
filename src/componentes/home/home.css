@@ -1407,6 +1407,7 @@ footer {
     height: 70px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    z-index: 1000;
   }
   .burger-menu div {
     text-align: end;
@@ -1426,20 +1427,23 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: end;
+    z-index: 1000;
   }
 
   .toggle .burger_class1 {
     background-color: #e0a872;
-    width: 2.1rem;
-    transform: rotate(-45deg) translate(-7px, 7px);
+    width: 1.7rem;
+    transform: rotate(-45deg) translate(-6px, 6px);
+    height: 0.1rem;
   }
   .toggle .burger_class2 {
     opacity: 0;
   }
   .toggle .burger_class3 {
     background-color: #e0a872;
-    width: 2.1rem;
-    transform: rotate(43deg) translate(-7px, -7px);
+    width: 1.7rem;
+    transform: rotate(43deg) translate(-6px, -6px);
+    height: 0.1rem;
   }
 
   .burger_class1 {
@@ -1456,12 +1460,13 @@ footer {
     position: fixed;
     top: 0;
     right: 0;
-    width: 50%;
-    height: 93vh;
-    background-color: #fff3e0cb;
+    width: 30%;
+    height: 100vh;
+    background-color: #fff3e0;
     border-bottom-left-radius: 10px;
     transform: translateX(100%);
     transition: 0.5s ease-in-out;
+    z-index: 1000;
   }
   .nav_active {
     transform: translateX(0);
@@ -3234,7 +3239,7 @@ footer {
     transition: 1s ease-in-out;
     margin-left: -5%;
     /* margin-top: 400px; */
-    margin-bottom: -500px;
+    margin-bottom: -550px;
     width: max-content;
     z-index: 100;
     display: flex;
