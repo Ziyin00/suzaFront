@@ -1,6 +1,6 @@
 import "./story.css";
 import StoryImage from "../../assets/img/Maskgroup2.png";
-import Navbar from "../navbar/Navbar";
+import Navbar from "../../componentes/navbar/Navbar";
 const Story = () => {
   return (
     <>
